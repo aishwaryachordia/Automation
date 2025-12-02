@@ -20,7 +20,7 @@ public class ErrorValidationsTest extends BaseTest{
 		public void errorValidation() throws IOException {
 			String productName="ZARA COAT 3";
 			landingPage.loginApplication("aishwarya@1234.com","Admin@1234");
-			Assert.assertEquals("Incorrect email password.",landingPage.getErrorMessage());
+			Assert.assertEquals("Incorrect email or password.",landingPage.getErrorMessage());
 		}
 		
 		@Test
